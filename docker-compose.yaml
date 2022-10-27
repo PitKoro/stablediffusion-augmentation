@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  stablediffusion-infinity:
+    build: .
+    ports:
+    - 8888:8888
+    volumes:
+      - ./main.ipynb:/app/main.ipynb
+      - ./checkpoints/:/app/checkpoints
+      - ./src/:/app/src
+      - ./img/:/app/img
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
