@@ -3,12 +3,13 @@ services:
   stablediffusion-infinity:
     build: .
     ports:
-    - 8888:8888
+    - 7575:7575
     volumes:
-      - ./main.ipynb:/app/main.ipynb
       - ./checkpoints/:/app/checkpoints
-      - ./src/:/app/src
       - ./img/:/app/img
+      - ./notebooks/:/app/notebooks
+      - ./src/:/app/src
+      - ./main2.ipynb:/app/main2.ipynb
     deploy:
       resources:
         reservations:
