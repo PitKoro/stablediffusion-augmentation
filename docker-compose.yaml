@@ -9,7 +9,6 @@ services:
       - ./img/:/app/img
       - ./notebooks/:/app/notebooks
       - ./src/:/app/src
-      - ./main2.ipynb:/app/main2.ipynb
     deploy:
       resources:
         reservations:
