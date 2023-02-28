@@ -9,6 +9,7 @@ services:
       - ./img/:/app/img
       - ./notebooks/:/app/notebooks
       - ./src/:/app/src
+      - ./dataset/:/app/dataset
     deploy:
       resources:
         reservations:

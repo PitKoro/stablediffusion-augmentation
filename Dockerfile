@@ -11,7 +11,7 @@ RUN pip install -U pip setuptools wheel
 RUN pip install -U tqdm jupyterlab ipywidgets
 RUN pip install -U opencv-python==4.6.0.66 diffusers==0.9.0 transformers==4.25.1 ninja==1.11.1 \
 datasets==2.8.0 scikit-image==0.19.3 fpie==0.2.4 numpy==1.21.6 \
-triton==1.1.1 pycocotools==2.0.6 accelerate==0.15.0 ftfy tensorboard modelcards mpi4py
+triton==1.1.1 pycocotools==2.0.6 accelerate==0.15.0 ftfy tensorboard modelcards mpi4py chitra
 
 
 WORKDIR /app
